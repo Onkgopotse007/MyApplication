@@ -15,7 +15,7 @@ import java.text.DateFormat;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener,TimePickerDialog.OnTimeSetListener {
-
+    DatabaseHelper myDB;
     TextView editDate, editTime;
     Button dateButton, timeButton;
 
@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        myDB = new DatabaseHelper(this);
         editDate = findViewById(R.id.editDate);
         dateButton = findViewById(R.id.dateButton);
         editTime = findViewById(R.id.editTime);
