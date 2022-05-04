@@ -19,16 +19,16 @@
 
     <EditText
         android:id="@+id/editDate"
-        android:layout_width="162dp"
-        android:layout_height="50dp"
+        android:layout_width="146dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="108dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginEnd="87dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="date"
         android:text="Date"
         app:layout_constraintEnd_toStartOf="@+id/dateButton"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Date" />
@@ -37,13 +37,14 @@
         android:id="@+id/editTime"
         android:layout_width="163dp"
         android:layout_height="60dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
         android:ems="10"
         android:inputType="time"
         android:text="Time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/timeButton"
-        app:layout_constraintHorizontal_bias="0.182"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDate"
         app:layout_constraintVertical_bias="0.008"
@@ -83,5 +84,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Save" />
+
+    <Button
+        android:id="@+id/viewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:text="View"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="View" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
